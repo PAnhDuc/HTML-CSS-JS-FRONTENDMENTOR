@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --grey700: hsl(0, 0%, 20%);
+        --grey800: hsl(0, 0%, 12%);
+        --grey900: hsl(0, 0%, 8%);
+      }
+
+      body {
+        font-family:"Inter", sans-serif;
+        background-color: var(--grey900);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-card {
+        padding: 25px;
+        border-radius: 8px;
+        background-color: var(--grey800);
+        width: 330px;
+      }
+      .box-card img {
+        width: 62px;
+        height: auto;
+        display: block;
+        text-align: center;
+        border-radius: 100%;
+        margin: 0 auto;
+      }
+      .box-card .card-name {
+        color: var(--white);
+        text-align: center;
+        margin: 8px 0px;
+      }
+      .box-card .card-from{
+        color: var(--green);
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .box-card .card-desc {
+        color: var(--white);
+        opacity: 0.6;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .skill-list {
+        list-style: none;
+      }
+      .skill-list .skill-item {
+        background-color: var(--grey700);
+        color: var(--white);
+        padding: 13px;
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px 0px;
+      }
+      .skill-list .skill-item:hover {
+        background: var(--green);
+        color: var(--grey900);
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-card">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="">
+        <h2 class="card-name">Jessica Randall</h2>
+        <p class="card-from">London, United Kingdom</p>
+        <p class="card-desc">"Front-end developer and avid reader."</p>
+
+        <ul class="skill-list">
+          <li class="skill-item">GitHub</li>
+          <li class="skill-item">Frontend Mentor</li>
+          <li class="skill-item">LinkedIn</li>
+          <li class="skill-item">Twitter</li>
+          <li class="skill-item">Instagram</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
